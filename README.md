@@ -1,3 +1,6 @@
+
+![logo_zdravJEM_zOzadjem](https://github.com/user-attachments/assets/fbb28724-1caa-44ba-b0c0-5e7d94dde68a)
+
 ## Kaj je zdravJEM?
 
 - **Družabno omrežje s pridihom kuhanja**: Uporabniki objavljajo fotografije svojih zdravih jedi.
@@ -19,6 +22,7 @@ Zato želimo izkoristiti moč družbenih omrežij in jih namesto za tekmovanje v
 ---
 
 ## Namestitev in zagon
+
 
 1. **Klonirajte repozitorij**:
    ```bash
