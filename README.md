@@ -23,7 +23,4 @@ Zato želimo izkoristiti moč družbenih omrežij in jih namesto za tekmovanje v
 
 ## Namestitev in zagon
 
-
-1. **Klonirajte repozitorij**:
-   ```bash
-   git clone https://github.com/vaše-uporabniško-ime/zdravJEM.git
+TODO: Aplikacija deluje z Angular + Firebase, umetne inteligenca se pa kliče preko lokalno delujočega Flask strežnika, ki streže klice za njeno uporabo.
