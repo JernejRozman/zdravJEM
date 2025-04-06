@@ -1,7 +1,7 @@
 import torch
 from PIL import Image
 from transformers import AutoImageProcessor  # or AutoFeatureExtractor if you used that
-from trainModel import MultiHeadViT  # import your model definition
+from old_ai.trainModel import MultiHeadViT  # import your model definition
 
 # ==== Load model ====
 model_path = "vit_fold3.pt"  # or whichever trained fold you want
