@@ -1,0 +1,17 @@
+# Ignorira naj vse vlke datoteke
+
+# Angular build output
+/dist
+/.angular
+# Node modules
+/node_modules
+# Firebase
+/.firebase
+/functions/lib
+/functions/node_modules
+# Environment/secret config
+/src/environments/environment*.ts
+# OS or editor junk
+*.log
+.DS_Store
+.vscode
