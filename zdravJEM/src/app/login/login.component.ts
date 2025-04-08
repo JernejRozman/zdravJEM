@@ -1,37 +1,19 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../auth.service';
-import { Router } from '@angular/router';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login.component.html'
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  email = '';
-  password = '';
-  errorMsg = '';
+  username: string = '';
+  password: string = '';
 
-  constructor(private authService: AuthService, private router: Router) {}
-
-  login() {
-    this.authService.login(this.email, this.password)
-      .then(() => {
-        // Redirect to a 'home' or 'dashboard' route upon success
-        this.router.navigate(['/home']);
-      })
-      .catch(err => {
-        this.errorMsg = err.message;
-      });
-  }
-
-  register() {
-    this.authService.register(this.email, this.password)
-      .then(() => {
-        // Optionally auto-login or direct user
-        this.router.navigate(['/home']);
-      })
-      .catch(err => {
-        this.errorMsg = err.message;
-      });
+  onSubmit() {
+    // Implement your login logic here
+    console.log('Username:', this.username);
+    console.log('Password:', this.password);
+    // Add authentication logic and navigate to the next page upon successful login
   }
 }

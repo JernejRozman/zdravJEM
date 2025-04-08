@@ -1,13 +1,12 @@
-<h2>Login</h2>
-<form (submit)="login(); $event.preventDefault()">
-  <label>Email</label>
-  <input type="email" [(ngModel)]="email" name="email" required>
+<div>
+  <h2>Login</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" [(ngModel)]="username" name="username" required>
 
-  <label>Password</label>
-  <input type="password" [(ngModel)]="password" name="password" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)]="password" name="password" required>
 
-  <button type="submit">Login</button>
-  <button type="button" (click)="register()">Register</button>
-</form>
-
-<p *ngIf="errorMsg">{{ errorMsg }}</p>
+    <button type="submit">Login</button>
+  </form>
+</div>

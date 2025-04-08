@@ -1,13 +1,17 @@
+// app-routing.module.ts
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+// Example: import your actual components
 import { LoginComponent } from './login/login.component';
-// We'll create a 'HomeComponent' next
 import { HomeComponent } from './home/home.component';
 
+// Define your routes:
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomeComponent },
+  { path: '', component: LoginComponent }, // show LoginComponent at '/'
+  { path: 'home', component: HomeComponent }
+  // or anything else you need
 ];
 
 @NgModule({

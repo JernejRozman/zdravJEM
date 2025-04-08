@@ -1,29 +1,37 @@
+// app.module.ts
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+// The root component of your app
 import { AppComponent } from './app.component';
 
-// 1) Import these from AngularFire
+// 1) AngularFire / Firebase
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { provideAuth, getAuth } from '@angular/fire/auth';
-
-// 2) Import the environment config
 import { environment } from '../environments/environment';
 
-// 3) For login form, you need FormsModule or ReactiveFormsModule
+// 2) FormsModule (for ngModel in your login form)
 import { FormsModule } from '@angular/forms';
 
-// (Optional) If you have routing
+// 3) Our routing module
 import { AppRoutingModule } from './app-routing.module';
+
+// 4) Declare your components
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    // We'll add our LoginComponent soon
+    LoginComponent,  // must be declared if used in routes
+    HomeComponent    // same here
   ],
   imports: [
     BrowserModule,
-    FormsModule,                       // enable ngModel
-    AppRoutingModule,                  // if using routing
+    FormsModule,
+    AppRoutingModule,
+    // Provide Firebase + Auth
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
   ],
