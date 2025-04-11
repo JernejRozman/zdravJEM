@@ -19,13 +19,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import {TestComponent} from './components/test/test.component';
+import {ScrollFeedComponent} from './components/scroll-feed/scroll-feed.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,  // must be declared if used in routes
     HomeComponent, // same here
-    TestComponent
+    TestComponent,
+    ScrollFeedComponent
   ],
   imports: [
     BrowserModule,
