@@ -5,20 +5,18 @@
   box-sizing: border-box;
 }
 
-
-
 /* Main container mimicking phone dimensions */
 .phone-mockup {
   width: 393px;
-  min-height: 852px;
-  background-color: #f8fff0; /* Slightly different green to stand out */
+  height: 852px; /* fixed height like an actual phone screen */
+  background-color: #f8fff0;
   border-radius: 2rem;
   border: 1px solid #cccccc;
-  overflow: hidden; /* Clips the content if it exceeds container bounds */
+  overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 1rem auto; /* Centers the component horizontally with margin */
+  margin: 1rem auto;
 }
 
 /* Header styling */
@@ -29,7 +27,7 @@ header {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #bbb;
-  flex-shrink: 0; /* Prevents the header from shrinking */
+  flex-shrink: 0;
 }
 
 header img.leaf-icon {
@@ -44,14 +42,14 @@ header h1 {
   font-weight: 700;
 }
 
-/* Main content area for posts */
+/* Scrollable feed area */
 main {
-  flex: 1; /* Allows main to stretch and fill available space */
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1rem;
-  overflow-y: auto; /* Adds vertical scroll if content is long */
 }
 
 /* Each post container */
@@ -87,30 +85,29 @@ main {
 
 /* Main post image styling */
 .post img.post-image {
-  width: 100%;       /* Ensures the image spans the full width of the post */
-  height: auto;      /* Maintains the aspect ratio of the image */
+  width: 100%;
+  height: auto;
   border-radius: 0.5rem;
-  object-fit: cover; /* Crops the image if the aspect ratio does not fit */
+  object-fit: cover;
 }
 
 /* Reaction row styling with emoji icons */
 .reaction-row {
   padding-top: 0.5rem;
   display: flex;
-  gap: 0.8rem; /* Space between emoji icons */
+  gap: 0.8rem;
 }
 
 .reaction-row span {
   cursor: pointer;
   transition: transform 0.3s ease;
-  font-size: 1.5rem; /* Enlarges emojis for better visibility and clickability */
+  font-size: 1.5rem;
 }
 
 .reaction-row span:hover {
-  transform: scale(1.4); /* Subtle hover effect */
+  transform: scale(1.4);
 }
 
-/* The active class applied when clicking (e.g., via Angular's (click) event handler) */
 .reaction-row span.active {
   transform: scale(3);
 }
@@ -123,11 +120,11 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-shrink: 0; /* Prevents the footer from shrinking */
+  flex-shrink: 0;
 }
 
 footer img.icon {
   width: 30px;
   height: 30px;
-  cursor: pointer; /* Indicates clickable icons */
+  cursor: pointer;
 }

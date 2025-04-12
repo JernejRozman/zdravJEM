@@ -1,0 +1,82 @@
+<div class="phone-mockup">
+  <header>
+    <img class="leaf-icon" src="assets/logo_zdravJEM_koncni.svg" alt="Logo zdravJEM" />
+    <h1>zdravJEM</h1>
+  </header>
+
+  <main class="friends-main">
+    <h2 class="friends-title">Friends</h2>
+
+    <ul class="friends-list">
+      <li class="friend">
+        <img class="avatar" src="assets/cat1.png" alt="CatLover avatar" />
+        <span class="name">Matej Mucoljub</span>
+        <button class="add-friend-btn" (click)="sendRequest('FoodieGuy')">Dodaj prijatelja</button>
+      </li>
+
+      <li class="friend">
+        <img class="avatar" src="assets/man1.png" alt="FoodieGuy avatar" />
+        <span class="name">FoodieGuy</span>
+        <button class="add-friend-btn" (click)="sendRequest('FoodieGuy')">Dodaj prijatelja</button>
+      </li>
+
+      <li class="friend">
+        <img class="avatar" src="assets/shrimporoll.png" alt="ShrimpDude avatar" />
+        <span class="name">Miha Lačen</span>
+        <button class="add-friend-btn" (click)="sendRequest('FoodieGuy')">Dodaj prijatelja</button>
+      </li>
+
+      <li class="friend">
+        <img class="avatar" src="assets/smothiebowl.png" alt="BerryQueen avatar" />
+        <span class="name">Zdravo Jed</span>
+        <button class="add-friend-btn" (click)="sendRequest('FoodieGuy')">Dodaj prijatelja</button>
+      </li>
+
+      <li class="friend">
+        <img class="avatar" src="assets/logo_zdravJEM_koncni.svg" alt="LeafLover avatar" />
+        <span class="name">Solatoboževalec</span>
+        <button class="add-friend-btn" (click)="sendRequest('FoodieGuy')">Dodaj prijatelja</button>
+      </li>
+
+      <li class="friend">
+        <img class="avatar" src="assets/photo-camera-svgrepo-com.svg" alt="ShutterBro avatar" />
+        <span class="name">ShutterBro</span>
+        <button class="add-friend-btn" (click)="sendRequest('FoodieGuy')">Dodaj prijatelja</button>
+      </li>
+
+
+
+
+
+
+
+
+
+
+    </ul>
+  </main>
+
+  <footer>
+    <a routerLink="/scrollfeed">
+      <img class="icon" src="assets/home.svg" alt="Home" />
+    </a>
+
+      <input
+        type="file"
+        accept="image/*"
+        capture="environment"
+        hidden
+        (change)="handlePhoto($event)"
+        #cameraInput
+      />
+
+      <!-- Camera icon button -->
+      <button (click)="cameraInput.click()" class="icon-button">
+        <img class="icon" src="assets/photo-camera-svgrepo-com.svg" alt="Open Camera" />
+      </button>
+
+    <a routerLink="/add">
+      <img class="icon" src="assets/add-friend-svgrepo-com.svg" alt="Add Friend" />
+    </a>
+  </footer>
+</div>

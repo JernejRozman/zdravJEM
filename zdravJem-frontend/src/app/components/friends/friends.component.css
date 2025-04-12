@@ -1,0 +1,133 @@
+/* Reuse .phone-mockup styling from shared CSS if needed */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.add-friend-btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background-color: #39b54a;
+  color: white;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-friend-btn:hover {
+  background-color: #2e9a3c;
+}
+
+
+/* Main container mimicking phone dimensions */
+.phone-mockup {
+  width: 393px;
+  min-height: 852px;
+  background-color: #f8fff0; /* Slightly different green to stand out */
+  border-radius: 2rem;
+  border: 1px solid #cccccc;
+  overflow: hidden; /* Clips the content if it exceeds container bounds */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto; /* Centers the component horizontally with margin */
+}
+
+/* Header styling */
+header {
+  background-color: #ecffde;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #bbb;
+  flex-shrink: 0; /* Prevents the header from shrinking */
+}
+
+header img.leaf-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+header h1 {
+  font-size: 1.3rem;
+  color: #2f5d27;
+  font-weight: 700;
+}
+/* Friends content section */
+.friends-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #f8fff0;
+}
+
+.friends-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2f5d27;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Friends list */
+.friends-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+/* Single friend entry */
+.friend {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between; /* pushes button to the right */
+  align-items: center;
+}
+
+.friend .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.friend .name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+footer {
+  border-top: 1px solid #bbb;
+  background-color: #ecffde;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0; /* Prevents the footer from shrinking */
+}
+
+footer img.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer; /* Indicates clickable icons */
+}
