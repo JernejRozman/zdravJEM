@@ -9,6 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import {ScrollFeedComponent} from './components/scroll-feed/scroll-feed.component';
 import { FriendsComponent} from './components/friends/friends.component';
 import {PhotoCaptureComponent} from './components/photo-capture/photo-capture.component';
+import {TesterComponent} from './components/tester/tester.component';
+
 
 // Define your routes:
 const routes: Routes = [
@@ -17,6 +19,9 @@ const routes: Routes = [
   { path: 'scrollfeed', component: ScrollFeedComponent},
   { path: 'friends', component: FriendsComponent},
   { path: 'photo', component: PhotoCaptureComponent},
+  {path: 'create', component: TesterComponent}
+
+
 
   // or anything else you need
 ];

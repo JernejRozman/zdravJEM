@@ -8,17 +8,11 @@ import { Post } from '../../models/post.model';
   templateUrl: './scroll-feed.component.html',
   styleUrls: ['./scroll-feed.component.css']
 })
-export class ScrollFeedComponent implements OnInit {
+export class ScrollFeedComponent{
   posts: Post[] = [];
 
-  constructor(private firestoreService: FirestoreService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.firestoreService.getPosts().subscribe((data) => {
-      // Optional: sort by date (most recent first)
-      //this.posts = data.sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
-    });
-  }
 
   handleReaction(event: Event): void {
     const target = event.target as HTMLElement;

@@ -1,0 +1,74 @@
+.phone-mockup {
+  width: 393px;
+  min-height: 852px;
+  background-color: #f8fff0;
+  border-radius: 2rem;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #ecffde;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #bbb;
+  flex-shrink: 0;
+}
+
+header img.leaf-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+header h1 {
+  font-size: 1.3rem;
+  color: #2f5d27;
+  font-weight: 700;
+}
+
+main.tester-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+main h2 {
+  color: #2f5d27;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #39b54a;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  border-top: 1px solid #bbb;
+  background-color: #ecffde;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+footer img.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
