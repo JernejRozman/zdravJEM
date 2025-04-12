@@ -60,22 +60,11 @@
     <a routerLink="/scrollfeed">
       <img class="icon" src="assets/home.svg" alt="Home" />
     </a>
-
-      <input
-        type="file"
-        accept="image/*"
-        capture="environment"
-        hidden
-        (change)="handlePhoto($event)"
-        #cameraInput
-      />
-
-      <!-- Camera icon button -->
-      <button (click)="cameraInput.click()" class="icon-button">
+    <a routerLink="/photo">
         <img class="icon" src="assets/photo-camera-svgrepo-com.svg" alt="Open Camera" />
-      </button>
+    </a>
 
-    <a routerLink="/add">
+    <a routerLink="/friends">
       <img class="icon" src="assets/add-friend-svgrepo-com.svg" alt="Add Friend" />
     </a>
   </footer>

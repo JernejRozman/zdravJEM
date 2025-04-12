@@ -1,19 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FirestoreService } from '../../services/firestore.service';
+import { Post } from '../../models/post.model';
 
 @Component({
   selector: 'app-scroll-feed',
   standalone: false,
   templateUrl: './scroll-feed.component.html',
-  styleUrl: './scroll-feed.component.css',
+  styleUrls: ['./scroll-feed.component.css']
 })
-export class ScrollFeedComponent {
+export class ScrollFeedComponent implements OnInit {
+  posts: Post[] = [];
+
+  constructor(private firestoreService: FirestoreService) {}
+
+  ngOnInit(): void {
+    this.firestoreService.getPosts().subscribe((data) => {
+      // Optional: sort by date (most recent first)
+      //this.posts = data.sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
+    });
+  }
 
   handleReaction(event: Event): void {
-    //console.log("Kliknjeno pizdica")
     const target = event.target as HTMLElement;
-    // Add a class that scales the emoji up 20%
     target.classList.add('active');
-    // Remove the class after 300ms so it returns to normal
     setTimeout(() => {
       target.classList.remove('active');
     }, 300);
