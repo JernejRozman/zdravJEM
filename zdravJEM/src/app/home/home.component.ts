@@ -14,8 +14,8 @@ export class HomeComponent {
   userEmail: string | null = null;
 
   constructor(private authService: AuthService, private router: Router) {
-    const currentUser = this.authService.currentUser;
-    this.userEmail = currentUser ? currentUser.email : null;
+    //const currentUser = this.authService.currentUser;
+    //this.userEmail = currentUser ? currentUser.email : null;
   }
 
   logout() {

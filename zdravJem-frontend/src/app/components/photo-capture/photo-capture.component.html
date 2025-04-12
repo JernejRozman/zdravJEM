@@ -1,0 +1,43 @@
+<div class="phone-mockup">
+  <header>
+    <img class="leaf-icon" src="assets/logo_zdravJEM_koncni.svg" alt="Logo zdravJEM" />
+    <h1>zdravJEM</h1>
+  </header>
+
+  <main class="fake-photo-content">
+    <h2>Naredi objavo!</h2>
+
+    <!-- Simulated camera preview box -->
+    <div class="camera-preview">
+      <p>📷 prikaz slike</p>
+    </div>
+
+    <input
+      type="file"
+      accept="image/*"
+      capture="environment"
+      hidden
+      (change)="handlePhoto($event)"
+      #cameraInput
+    />
+
+    <button class="capture-button" (click)="cameraInput.click()">
+      📸 Posnemi fotografijo
+    </button>
+
+    <div *ngIf="uploading" class="status uploading">Sending to server...</div>
+    <div *ngIf="uploadComplete" class="status success">✅ Photo sent successfully!</div>
+  </main>
+
+  <footer>
+    <a routerLink="/scrollfeed">
+      <img class="icon" src="assets/home.svg" alt="Home" />
+    </a>
+    <a routerLink="/photo">
+      <img class="icon" src="assets/photo-camera-svgrepo-com.svg" alt="Scroll Feed" />
+    </a>
+    <a routerLink="/friends">
+      <img class="icon" src="assets/add-friend-svgrepo-com.svg" alt="Friends" />
+    </a>
+  </footer>
+</div>

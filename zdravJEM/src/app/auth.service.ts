@@ -14,7 +14,8 @@ export class AuthService {
 
   // Register new user
   register(email: string, password: string) {
-    return createUserWithEmailAndPassword(this.auth, email, password);
+    //return {}
+    //return createUserWithEmailAndPassword(this.auth, email, password);
   }
 
   // Logout
