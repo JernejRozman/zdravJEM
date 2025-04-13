@@ -3,7 +3,7 @@
 </p>
 
 
-**zdravJEM** je družabna aplikacija, ki združuje svet zdrave prehrane, umetne inteligence in motivacije s pomočjo skupnosti.  
+**zdravJEM** je družabna aplikacija, ki združuje svet zdrave prehrane, umetne inteligence in motivacije s pomočjo prijatelskih odnosov.  
 Naša misija? Skupaj preoblikovati vsakdanjo kuhinjo v prostor ustvarjalnosti, zdravja in pozitivne energije.
 
 ---
