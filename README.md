@@ -22,7 +22,7 @@ Aplikacija uporablja umetno inteligenco za prepoznavanje sestavin na vaših foto
 Vsak teden aplikacija izbere jed enega izmed vaših prijateljev in vas izzove, da jo poustvarite:
 - skuhajte,
 - fotografirajte,
-- delite rezultat s svojo mrežo.
+- delite rezultat s svojimi prijatelji.
 
 ---
 
