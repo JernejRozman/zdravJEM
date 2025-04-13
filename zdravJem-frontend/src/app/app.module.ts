@@ -44,11 +44,7 @@ import { TesterComponent } from './components/tester/tester.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
-
-    TesterComponent
-
-
+    AppRoutingModule
   ],
   providers: [
 
