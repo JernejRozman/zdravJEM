@@ -28,7 +28,7 @@ Vsak teden aplikacija izbere jed enega izmed vaših prijateljev in vas izzove, d
 
 ## ❓ Zakaj spodbujamo zdravo prehrano?
 
-- 🧍‍♂️ **1 od 5 odraslih v Sloveniji je debel** (Evropska komisija, 2023).
+- 🫃 **1 od 5 odraslih v Sloveniji je debel** (Evropska komisija, 2023).
 - 💔 Nezdrava prehrana prispeva k **16 % vseh smrti v Sloveniji**.
 - ❤️ Po podatkih WHO (2024) so **kardiovaskularne bolezni** še vedno glavni vzrok smrti na svetu.
 
@@ -51,12 +51,30 @@ Aplikacija temelji na **moderni tehnologiji**:
 ### Namestitev (lokalno)
 
 1. **Kloniraj repozitorij**:
-
-2. **Namesti Angular odvisnosti:**
+   ```bash
+    git clone https://github.com/tvoje-uporabnisko-ime/zdravjem.git```
+3. **Namesti Angular odvisnosti:**
 
 ```bash
 cd frontend
 npm install
+```
 
-**Zaženi Angular frontend**
+3. **Zaženi Angular frontend:**
+
+```bash
 ng serve
+```
+
+4. **Poganjanje AI modela (Flask strežnik):**
+
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
+
+
+
+
+
