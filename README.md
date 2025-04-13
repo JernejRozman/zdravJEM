@@ -42,7 +42,7 @@ Aplikacija temelji na **moderni tehnologiji**:
 
 
 <p align="center">
-  <img src="./demo.gif" alt="Predstavitev aplikacije zdravJEM" width="600" lenght="600"/>
+  <img src="./demo.gif" alt="Predstavitev aplikacije zdravJEM" width="300" lenght="500"/>
 </p>
 
 ### Namestitev (lokalno)
