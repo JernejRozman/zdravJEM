@@ -1,4 +1,7 @@
-![zdravJEM Logo](https://github.com/user-attachments/assets/fbb28724-1caa-44ba-b0c0-5e7d94dde68a)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fbb28724-1caa-44ba-b0c0-5e7d94dde68a" width="400" lenght="400"/>
+</p>
+
 
 **zdravJEM** je družabna aplikacija, ki združuje svet zdrave prehrane, umetne inteligence in motivacije s pomočjo skupnosti.  
 Naša misija? Skupaj preoblikovati vsakdanjo kuhinjo v prostor ustvarjalnosti, zdravja in pozitivne energije.
