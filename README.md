@@ -10,15 +10,15 @@ Naša misija? Skupaj preoblikovati vsakdanjo kuhinjo v prostor ustvarjalnosti, z
 
 ## 💡 Kaj je zdravJEM?
 
-### 📸 Družabno omrežje s pridihom kuhanja
+###  Družabno omrežje s pridihom kuhanja
 Uporabniki delijo fotografije svojih zdravih jedi, raziskujejo ideje drugih in se med seboj spodbujajo k zdravemu življenjskemu slogu.
 
-### 🧠 Pametni AI algoritem
+###  Pametni AI algoritem
 Aplikacija uporablja umetno inteligenco za prepoznavanje sestavin na vaših fotografijah ter vam:
 - ponudi predloge podobnih, a še bolj zdravih jedi,
 - pomaga odkriti nove sestavine in boljše prehranske izbire.
 
-### 🏆 Tedenski izziv
+###  Tedenski izziv
 Vsak teden aplikacija izbere jed enega izmed vaših prijateljev in vas izzove, da jo poustvarite:
 - skuhajte,
 - fotografirajte,
@@ -26,22 +26,22 @@ Vsak teden aplikacija izbere jed enega izmed vaših prijateljev in vas izzove, d
 
 ---
 
-## ❓ Zakaj spodbujamo zdravo prehrano?
+##  Zakaj spodbujamo zdravo prehrano?
 
-- 🫃 **1 od 5 odraslih v Sloveniji je debel** (Evropska komisija, 2023).
-- 💔 Nezdrava prehrana prispeva k **16 % vseh smrti v Sloveniji**.
-- ❤️ Po podatkih WHO (2024) so **kardiovaskularne bolezni** še vedno glavni vzrok smrti na svetu.
+- **1 od 5 odraslih v Sloveniji je debel** (Evropska komisija, 2023).
+-  Nezdrava prehrana prispeva k **16 % vseh smrti v Sloveniji**.
+-  Po podatkih WHO (2024) so **kardiovaskularne bolezni** še vedno glavni vzrok smrti na svetu.
 
 Zato si želimo, da bi družbena omrežja prešla iz »Kdo ima lepšo fotografijo?« v »Kdo je skuhal bolj zdravo in domiselno jed?«
 
 ---
 
-## 🚀 Tehnična zasnova in zagon aplikacije
+##  Tehnična zasnova in zagon aplikacije
 
 Aplikacija temelji na **moderni tehnologiji**:
-- 🎯 **Frontend**: [Angular](https://angular.io) – za odzivno in prijazno uporabniško izkušnjo.
-- 🔥 **Baza podatkov in avtentikacija**: [Firebase](https://firebase.google.com) – za shranjevanje uporabnikov, objav in slik.
-- 🧠  **Umetna inteligenca**: Flask strežnik (lokalno) s priklopljenimi modeli za računalniški vid.
+-  **Frontend**: [Angular](https://angular.io) – za odzivno in prijazno uporabniško izkušnjo.
+-  **Baza podatkov in avtentikacija**: [Firebase](https://firebase.google.com) – za shranjevanje uporabnikov, objav in slik.
+-   **Umetna inteligenca**: Flask strežnik (lokalno) s priklopljenimi modeli za računalniški vid.
 
 
 <p align="center">
@@ -52,7 +52,7 @@ Aplikacija temelji na **moderni tehnologiji**:
 
 1. **Kloniraj repozitorij**:
    ```bash
-    git clone https://github.com/tvoje-uporabnisko-ime/zdravjem.git```
+    git clone https://github.com/tvoje-uporabnisko-ime/zdravjem.git
 3. **Namesti Angular odvisnosti:**
 
 ```bash
