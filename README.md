@@ -1,26 +1,60 @@
+![zdravJEM Logo](https://github.com/user-attachments/assets/fbb28724-1caa-44ba-b0c0-5e7d94dde68a)
 
-![logo_zdravJEM_zOzadjem](https://github.com/user-attachments/assets/fbb28724-1caa-44ba-b0c0-5e7d94dde68a)
-
-## Kaj je zdravJEM?
-
-- **Družabno omrežje s pridihom kuhanja**: Uporabniki objavljajo fotografije svojih zdravih jedi.
-- **Pametni AI algoritem**: Prepozna sestavine z vaših slik in ponudi predloge podobnih ali še bolj zdravih jedi.
-- **Tedenski Izziv**: Enkrat na teden izbere neko objavljeno jed v vaši mreži prijateljev in vas pozove, da jo sami pripravite ter delite rezultate.
-
-Ste pripravljeni, da skupaj spremenimo sliko hitre in nezdrave hrane v atraktivne in zdrave krožnike?
+**zdravJEM** je družabna aplikacija, ki združuje svet zdrave prehrane, umetne inteligence in motivacije s pomočjo skupnosti.  
+Naša misija? Skupaj preoblikovati vsakdanjo kuhinjo v prostor ustvarjalnosti, zdravja in pozitivne energije.
 
 ---
 
-## Zakaj zdrava prehrana?
+## 💡 Kaj je zdravJEM?
 
-1. **Vsak peti odrasli v Sloveniji je debel**, pravi Evropska komisija (2023) in OECD (Policies, 2024).  
-2. Nezdrava prehrana prispeva k **16 % vseh smrti v Sloveniji**.  
-3. Po podatkih Svetovne zdravstvene organizacije (WHO, 2024) so **kardiovaskularne bolezni** glavni vzrok smrti na svetu.
+### 📸 Družabno omrežje s pridihom kuhanja
+Uporabniki delijo fotografije svojih zdravih jedi, raziskujejo ideje drugih in se med seboj spodbujajo k zdravemu življenjskemu slogu.
 
-Zato želimo izkoristiti moč družbenih omrežij in jih namesto za tekmovanje v »Kdo ima lepšo fotografijo« uporabiti za tekmovanje v »Kdo kuha bolj zdravo in domiselno?«.
+### 🧠 Pametni AI algoritem
+Aplikacija uporablja umetno inteligenco za prepoznavanje sestavin na vaših fotografijah ter vam:
+- ponudi predloge podobnih, a še bolj zdravih jedi,
+- pomaga odkriti nove sestavine in boljše prehranske izbire.
+
+### 🏆 Tedenski izziv
+Vsak teden aplikacija izbere jed enega izmed vaših prijateljev in vas izzove, da jo poustvarite:
+- skuhajte,
+- fotografirajte,
+- delite rezultat s svojo mrežo.
 
 ---
 
-## Namestitev in zagon
+## ❓ Zakaj spodbujamo zdravo prehrano?
 
-TODO: Aplikacija deluje z Angular + Firebase, umetne inteligenca se pa kliče preko lokalno delujočega Flask strežnika, ki streže klice za njeno uporabo.
+- 🧍‍♂️ **1 od 5 odraslih v Sloveniji je debel** (Evropska komisija, 2023).
+- 💔 Nezdrava prehrana prispeva k **16 % vseh smrti v Sloveniji**.
+- ❤️ Po podatkih WHO (2024) so **kardiovaskularne bolezni** še vedno glavni vzrok smrti na svetu.
+
+Zato si želimo, da bi družbena omrežja prešla iz »Kdo ima lepšo fotografijo?« v »Kdo je skuhal bolj zdravo in domiselno jed?«
+
+---
+
+## 🚀 Tehnična zasnova in zagon aplikacije
+
+Aplikacija temelji na **moderni tehnologiji**:
+- 🎯 **Frontend**: [Angular](https://angular.io) – za odzivno in prijazno uporabniško izkušnjo.
+- 🔥 **Baza podatkov in avtentikacija**: [Firebase](https://firebase.google.com) – za shranjevanje uporabnikov, objav in slik.
+- 🧠  **Umetna inteligenca**: Flask strežnik (lokalno) s priklopljenimi modeli za računalniški vid.
+
+
+<p align="center">
+  <img src="./demo.gif" alt="Predstavitev aplikacije zdravJEM" width="600"/>
+</p>
+
+### Namestitev (lokalno)
+
+1. **Kloniraj repozitorij**:
+
+2. **Namesti Angular odvisnosti:**
+
+```bash
+cd frontend
+npm install
+
+**Zaženi Angular frontend**
+ng serve
+
