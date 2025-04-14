@@ -28,7 +28,7 @@ Vsak teden aplikacija izbere jed enega izmed vaših prijateljev in vas izzove, d
 
 ##  Zakaj spodbujamo zdravo prehrano?
 
-- **1 od 5 odraslih v Sloveniji je debel** (Evropska komisija, 2023).
+- **1 od 5 odraslih v Sloveniji ima težave z prekomerno telesno maso** (Evropska komisija, 2023).
 -  Nezdrava prehrana prispeva k **16 % vseh smrti v Sloveniji**.
 -  Po podatkih WHO (2024) so **kardiovaskularne bolezni** še vedno glavni vzrok smrti na svetu.
 
