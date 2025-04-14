@@ -7,7 +7,8 @@
 # %%
 from huggingface_hub import login
 
-my_token = "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"
+my_token = "#####################################"
+           
 login(token=my_token)
 
 
@@ -264,7 +265,8 @@ model = ViTForImageClassification.from_pretrained(
 
 # %% Zakomentiramo za SLURM
 #import wandb
-#wandb.login(key="c49e776d1781cd0f514feb3795f1dae743708d52")
+#wandb.login(key="########################################")
+        
 
 
 # %% [markdown]
